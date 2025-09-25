@@ -2,7 +2,7 @@
 
 # My Portfolio
 
-A personal portfolio showcasing my projects, skills, and experience as a "Full-Stack Developer".
+A personal portfolio showcasing my projects, skills, and experience as a "Frontend Developer".
 
 ## **Features**
 
