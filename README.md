@@ -14,6 +14,7 @@ A personal portfolio showcasing my projects, skills, and experience as a "Fronte
 - HTML5
 - CSS3
 - Javascript
+- Github Pages
 
 ## **Contact**
 
