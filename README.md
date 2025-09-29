@@ -13,10 +13,10 @@ A personal portfolio showcasing my projects, skills, and experience as a "Fronte
 
 - HTML5
 - CSS3
+- Javascript
 
 ## **Contact**
 
 Feel free to connect with me!
 
-- **Email:** [Your Email Address]
-- **LinkedIn:** [Link to your LinkedIn Profile]
+- **Email:** ysdhuri312@gmail.com
