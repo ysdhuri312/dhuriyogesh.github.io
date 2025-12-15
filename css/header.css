@@ -63,7 +63,7 @@ nav li a:hover:after {
 
 .btn {
     background-color: var(--primary-color);
-    color: var(--background-color);
+    color: var(--background-color) !important;
     padding: 11px 25px;
     border-radius: 1px;
     border: none;

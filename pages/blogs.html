@@ -7,31 +7,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blogs</title>
   <link rel="icon" type="image/svg" href="../logo-large.svg" />
-  <script type="module" crossorigin src="js/script.js" defer></script>
+  <script type="module" crossorigin src="../js/script.js" defer></script>
   <link rel="stylesheet" crossorigin href="../css/index.css" />
   <link rel="stylesheet" href="../css/header.css" />
-  <link rel="stylesheet" href="../css/blog.css" />
+  <link rel="stylesheet" href="../css/blogs.css" />
 </head>
 <body>
   <div id="app">
-    <header>
+    <header id="header">
       <div class="container">
         <h1 id="logo">
           <a href="#home">&#60; YOGESH.DEV <span>&#47; </span>&#62;</a>
         </h1>
         <nav class="nav-links" id="nav-links">
           <ul>
-            <li><a href="../index.html" class="nav-link">Home</a></li>
-            <li><a href="../index.html#about-me" class="nav-link">About</a></li>
-            <li><a href="../index.html#my-work" class="nav-link">Projects</a></li>
-            <li><a href="../index.html#contact-me" class="nav-link">Contact</a></li>
-            <li><a href="/pages/blog.html" class="nav-link">Blogs</a></li>
+            <li><a href="/index.html" class="nav-link">Home</a></li>
+            <li><a href="#about-me" class="nav-link">About</a></li>
+            <li><a href="#my-work" class="nav-link">Projects</a></li>
+            <li><a href="#contact-me" class="nav-link">Contact</a></li>
+            <li><a href="/pages/blogs.html" class="nav-link">Blogs</a></li>
             <li><a href="#photos" class="nav-link">Photos</a></li>
           </ul>
           <a href="#contact-me" class="btn">Let's Talk</a>
         </nav>
         <div class="hamburger-menu" id="toggle-menu">
-          <img src="assets/icons/hamburger-menu.png" alt="menu" height="20" width="20" />
+          <img src="../assets/icons/hamburger-menu.png" alt="menu" height="20" width="20" />
+        </div>
+        <div class="close-menu">
+          <img src="../assets/icons/close.png" alt="menu" height="20" width="20" />
         </div>
     </header>
 
@@ -40,9 +43,9 @@
         <section id="blogs">
           <h1>Blogs</h1>
           <p>
-            <a href="">Home /</a>
-            <a href="">Catagories /</a>
-            <a href=""> Raspberry-pi-home-automation </a>
+            <a href="">Home</a>
+            <span>/</span>
+            <a href="">Tags</a>
           </p>
           <article class="blog">
             <figure>
@@ -50,7 +53,7 @@
             </figure>
             <div class="blog__content">
               <h4 clss="blog__title">
-                <a href="/blog/Raspberry Pi Home Automation">Raspberry Pi Home Automation with Google Assistant
+                <a href="/pages/blog.html">Raspberry Pi Home Automation with Google Assistant
                   integration — Part 3 (Assistant integration)</a>
               </h4>
               <div class="blog__meta">
@@ -70,7 +73,7 @@
             </figure>
             <div class="blog__content">
               <h4 clss="blog__title">
-                <a href="/blog/Raspberry Pi Home Automation">Raspberry Pi Home Automation with Google Assistant
+                <a href="/pages/blog.html">Raspberry Pi Home Automation with Google Assistant
                   integration — Part 3 (Assistant integration)</a>
               </h4>
               <div class="blog__meta">
@@ -83,38 +86,58 @@
                 frontend. Time to take things up a little notch. We’ll be integrating Google Assistant...</p>
             </div>
           </article>
-        </section>
 
-        <nav>
-          <ul class="pagination__list">
-            <li class="pagination__item pagination__item--prev">
-              <a href="" rel="prev" aria-label="Previous page">
-                ← Previous
-              </a>
-            </li>
-            <li class="pagination__item pagination_item--status">
-              <span aria-current="page">
-                1 of 6
-              </span>
-            </li>
-            <li class="pagination__item pagination__item--next">
-              <a href="" rel="next" aria-label="Next page">
-                Next →
-              </a>
-            </li>
-          </ul>
-        </nav>
+          <article class="blog">
+            <figure>
+              <img src="../assets/placeholder_blog-card.png" alt="Raspberry Pi Home Automation" />
+            </figure>
+            <div class="blog__content">
+              <h4 clss="blog__title">
+                <a href="/pages/blog.html">Raspberry Pi Home Automation with Google Assistant
+                  integration — Part 3 (Assistant integration)</a>
+              </h4>
+              <div class="blog__meta">
+                <time datetime="2018-11-03">Nov 3, 2018</time>
+                <span>•</span>
+                <span class="blog-reading__time">6 min read</span>
+              </div>
+              <p class="blog__description">So up till now you have been able to control the switches with the React
+                based
+                frontend. Time to take things up a little notch. We’ll be integrating Google Assistant...</p>
+            </div>
+          </article>
+
+          <nav>
+            <ul class="pagination__list">
+              <li class="pagination__item pagination__item--prev">
+                <a href="" rel="prev" aria-label="Previous page">
+                  ← Previous
+                </a>
+              </li>
+              <li class="pagination__item pagination_item--status">
+                <span aria-current="page">
+                  1 of 6
+                </span>
+              </li>
+              <li class="pagination__item pagination__item--next">
+                <a href="" rel="next" aria-label="Next page">
+                  Next →
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
       </div>
     </main>
 
     <footer id="footer">
       <div class="container">
-        <p>© 2025 Yogesh Dhuri. All rights reserved.</p>
+        <p class="copyright">© 2025 Yogesh Dhuri. All rights reserved.</p>
         <div class="social-icons">
-          <a href="#"><img src="assets/icons/linkedin.png" alt="linkedin-logo" target="_blank" /></a>
-          <a href="https://github.com/yogesh-dhuri" target="_blank"><img src="assets/icons/github.png"
+          <a href="#"><img src="../assets/icons/linkedin.png" alt="linkedin-logo" target="_blank" /></a>
+          <a href="https://github.com/yogesh-dhuri" target="_blank"><img src="../assets/icons/github.png"
               alt="github-logo" /></a>
-          <a href="#"><img src="assets/icons/instagram.png" alt="instagram-logo" target="_blank" /></a>
+          <a href="#"><img src="../assets/icons/instagram.png" alt="instagram-logo" target="_blank" /></a>
         </div>
       </div>
     </footer>

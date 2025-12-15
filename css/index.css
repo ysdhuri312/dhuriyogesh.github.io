@@ -22,6 +22,14 @@
     background-color: var(--background-color)
 }
 
+a,
+a:visited,
+a:hover,
+a:active {
+    color: #1A1A1A;
+    text-decoration: none;
+}
+
 .container {
     max-width: 1440px;
     margin-inline: auto
