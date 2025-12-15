@@ -30,12 +30,37 @@
     fetch(e.href, t);
   }
 })();
-const u = document.querySelector('#toggle-menu'),
-  a = document.querySelector('#nav-links');
-document.querySelector('.close-menu');
-u.addEventListener('click', function () {
-  a.classList.toggle('active');
+
+const toggleBtn = document.querySelector('.hamburger-menu');
+const navLinks = document.querySelector('#nav-links');
+const closeBtn = document.querySelector('.close-menu');
+
+toggleBtn.addEventListener('click', function () {
+  navLinks.classList.toggle('active');
+  toggleBtn.style.display = 'none';
+  closeBtn.style.display = 'inline-block';
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 850) {
+      toggleBtn.style.display = 'none';
+    } else {
+      closeBtn.style.display = 'inline-block';
+    }
+  });
 });
+
+closeBtn.addEventListener('click', () => {
+  navLinks.classList.remove('active');
+  toggleBtn.style.display = 'inline-block';
+  closeBtn.style.display = 'none';
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 850) {
+      window.location.reload();
+    }
+  });
+});
+
 const i = document.getElementById('form'),
   n = document.getElementById('result');
 i.addEventListener('submit', function (l) {

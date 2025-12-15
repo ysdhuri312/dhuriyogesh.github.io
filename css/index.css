@@ -1,8 +1,8 @@
 @font-face {
-    font-family: poppins;
-    src: url(fonts/Poppins.ttf) format("truetype");
-    font-family: roboto;
-    src: url(fonts/Roboto.ttf) format("truetype")
+    font-family: "Poppins";
+    src: url(../assets/fonts/Poppins.ttf) format("truetype");
+    font-family: "Open Sans";
+    src: url(../assets/fonts/OpenSans.ttf) format("truetype")
 }
 
 :root {
@@ -18,7 +18,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: Poppins, sans-serif;
+    font-family: "Open Sans", sans-serif;
     background-color: var(--background-color)
 }
 
