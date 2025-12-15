@@ -1,0 +1,141 @@
+header .container {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    position: relative
+}
+
+header {
+    position: sticky;
+    top: 0
+}
+
+.nav-links,
+.nav-links ul {
+    display: flex
+}
+
+nav li {
+    padding: 10px 15px
+}
+
+.hamburger-menu,
+.close-menu {
+    display: none
+}
+
+#logo a {
+    font-size: 20px;
+    color: var(--font-color)
+}
+
+#logo span {
+    font-size: 26px;
+    color: var(--primary-color)
+}
+
+.nav-link {
+    color: var(--font-color);
+    position: relative
+}
+
+nav li a:after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: .4s ease-in-out
+}
+
+nav li a:hover:after {
+    width: 100%
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 11px 25px;
+    border-radius: 1px;
+    border: none;
+    font-size: 14px
+}
+
+header>.btn:hover {
+    opacity: .9
+}
+
+@media screen and (max-width: 1024px) {
+    header #logo a {
+        font-size: 18px
+    }
+
+    #logo span {
+        font-size: 20px
+    }
+
+    nav li a {
+        font-size: 13px
+    }
+
+    header .btn {
+        font-size: 12px
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .nav-links {
+        position: absolute;
+        flex-direction: column;
+        left: -100%;
+        top: 70%;
+        width: 100%;
+        text-align: center;
+        transition: .2s ease-in-out
+    }
+
+    .nav-links.active {
+        left: 0;
+        transition: .2s ease-in-out
+    }
+
+    .nav-links ul {
+        flex-direction: column
+    }
+
+    .nav-links .btn {
+        padding: 10px 30px;
+        margin-bottom: 10px 50px
+    }
+
+    header #logo a {
+        font-size: 17px;
+        font-weight: 800
+    }
+
+    #logo span {
+        font-size: 18px
+    }
+
+    #logo {
+        margin-bottom: 10px
+    }
+
+    .hamburger-menu {
+        display: inline-block;
+        font-size: 10px;
+        cursor: pointer
+    }
+
+    .close-menu {
+        display: none;
+        font-size: 10px;
+        cursor: pointer
+    }
+}
