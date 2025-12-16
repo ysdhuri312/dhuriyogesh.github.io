@@ -5,11 +5,24 @@
     color: #1A1A1A;
 }
 
-#blogs p {
+.blogs-layout {
+    display: flex;
+    gap: 10px;
+}
+
+.blogs {
+    flex: 75%
+}
+
+.blogs-aside {
+    flex: 25%
+}
+
+.breadcrumb {
     margin: 15px 0;
 }
 
-#blogs p>a {
+.breadcrumb a {
     text-decoration: underline;
 }
 
@@ -41,6 +54,16 @@
 .pagination__list {
     display: flex;
     justify-content: space-between;
+}
+
+.blogs-aside {
+    margin-top: 90px;
+}
+
+.blogs-aside {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 #footer {

@@ -35,16 +35,110 @@
             </div>
     </header>
 
+    <main id="main">
+        <section id="blog-container">
+            <nav class="breadcrumb">
+                <a href="">Home</a>
+                <span>/</span>
+                <a href="">Raspberry-pi-home-automation</a>
+            </nav>
 
+            <div id="blog-layout">
+                <article class="blog-post">
+                    <div class="blog-post__header">
+                        <h1 class="blog-post-post__title">
+                            <a href="/pages/blog.html">Raspberry Pi Home Automation with Google Assistant
+                                integration — Part 3 (Assistant integration)</a>
+                        </h1>
+                        <div class="blog-post__meta">
+                            <time datetime="2018-11-03">November 3, 2018</time>
+                            <span>•</span>
+                            <span class="blog-post-reading__time">6 min read</span>
+                        </div>
+                    </div>
+
+                    <figure class="blog-post__cover">
+                        <img src="../assets/sample-blog 1.png" alt="Raspberry Pi Home Automation" />
+                        <figcaption>Raspberry Pi based smart home setup</figcaption>
+                    </figure>
+
+                    <div class="blog-post__description">
+                        <p>
+                            So up till now you have been able to control the switches with the React
+                            based frontend. Time to take things up a little notch. In this part,
+                            we’ll be integrating Google Assistant with our Raspberry Pi setup.
+                        </p>
+
+                        <h3>Prerequisites</h3>
+                        <ul>
+                            <li>Raspberry Pi with Raspbian OS</li>
+                            <li>Node.js installed</li>
+                            <li>Google Cloud account</li>
+                        </ul>
+                        <h3>Step 1: Google Assistant Setup</h3>
+                        <p>
+                            First, we need to create a project in Google Cloud and enable the
+                            Google Assistant API.
+                        </p>
+                        <pre>
+                            <code>
+                                npm install actions-on-google
+                            </code>
+                        </pre>
+                        <blockquote>
+                            Voice control makes home automation truly powerful.
+                        </blockquote>
+                    </div>
+
+                    <footer class="blog-post__footer">
+                        <div class="blog-post__tags">
+                            <span>Tags:</span>
+                            <a href="/tags/raspberry-pi">Raspberry Pi</a>
+                            <a href="/tags/iot">IoT</a>
+                            <a href="/tags/google-assistant">Google Assistant</a>
+                        </div>
+                        <!-- Navigation -->
+                        <nav class="blog-post__navigation">
+                            <a href="#" class="prev-post">← Previous Post</a>
+                            <a href="#" class="next-post">Next Post →</a>
+                        </nav>
+                    </footer>
+                </article>
+
+                <aside class="blog-aside">
+                    <!-- Table of Contents -->
+                    <section class="blog-aside__toc">
+                        <h3>On this page</h3>
+                        <ul>
+                            <li><a href="#prerequisites">Prerequisites</a></li>
+                            <li><a href="#assistant-setup">Google Assistant Setup</a></li>
+                        </ul>
+                    </section>
+                    <!-- Related Posts -->
+                    <section class="blog-aside__related">
+                        <h3>Related Posts</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Raspberry Pi Home Automation — Part 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Raspberry Pi Home Automation — Part 2</a>
+                            </li>
+                        </ul>
+                    </section>
+                </aside>
+            </div>
+        </section>
+    </main>
 
     <footer id="footer">
         <div class="container">
-            <p>© 2025 Yogesh Dhuri. All rights reserved.</p>
+            <p class="copyright">© 2025 Yogesh Dhuri. All rights reserved.</p>
             <div class="social-icons">
-                <a href="#"><img src="assets/icons/linkedin.png" alt="linkedin-logo" target="_blank" /></a>
-                <a href="https://github.com/yogesh-dhuri" target="_blank"><img src="assets/icons/github.png"
+                <a href="#"><img src="../assets/icons/linkedin.png" alt="linkedin-logo" target="_blank" /></a>
+                <a href="https://github.com/yogesh-dhuri" target="_blank"><img src="../assets/icons/github.png"
                         alt="github-logo" /></a>
-                <a href="#"><img src="assets/icons/instagram.png" alt="instagram-logo" target="_blank" /></a>
+                <a href="#"><img src="../assets/icons/instagram.png" alt="instagram-logo" target="_blank" /></a>
             </div>
         </div>
     </footer>

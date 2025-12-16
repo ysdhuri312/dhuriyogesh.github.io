@@ -39,20 +39,20 @@
     </header>
 
     <main id="main">
-      <div id="blogs-container">
+      <div id="blogs-container" class="blogs-layout">
         <section id="blogs">
           <h1>Blogs</h1>
-          <p>
+          <nav class="breadcrumb">
             <a href="">Home</a>
             <span>/</span>
             <a href="">Tags</a>
-          </p>
+          </nav>
           <article class="blog">
             <figure>
               <img src="../assets/placeholder_blog-card.png" alt="Raspberry Pi Home Automation" />
             </figure>
             <div class="blog__content">
-              <h4 clss="blog__title">
+              <h4 class="blog__title">
                 <a href="/pages/blog.html">Raspberry Pi Home Automation with Google Assistant
                   integration — Part 3 (Assistant integration)</a>
               </h4>
@@ -127,6 +127,29 @@
             </ul>
           </nav>
         </section>
+
+        <aside class="blogs-aside">
+          <!-- Table of Contents -->
+          <section class="blogs-aside__toc">
+            <h3>On this page</h3>
+            <ul>
+              <li><a href="#prerequisites">Prerequisites</a></li>
+              <li><a href="#assistant-setup">Google Assistant Setup</a></li>
+            </ul>
+          </section>
+          <!-- Related Posts -->
+          <section class="blogs-aside__related">
+            <h3>Related Posts</h3>
+            <ul>
+              <li>
+                <a href="#">Raspberry Pi Home Automation — Part 1</a>
+              </li>
+              <li>
+                <a href="#">Raspberry Pi Home Automation — Part 2</a>
+              </li>
+            </ul>
+          </section>
+        </aside>
       </div>
     </main>
 
