@@ -111,3 +111,28 @@
     font-size: 14px;
     background: #6fd2f5
 }
+
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 850px) {
+    .blog__title {
+        font-size: 15px;
+    }
+
+    .blog__meta {
+        font-size: 15px;
+    }
+
+    .blog__description {
+        font-size: 15px;
+    }
+
+    .blog img {
+        height: 100%;
+    }
+
+    .blogs-aside {
+        display: none;
+    }
+}

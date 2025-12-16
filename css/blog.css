@@ -111,3 +111,13 @@
     font-size: 14px;
     background: #6fd2f5
 }
+
+@media screen and (max-width: 850px) {
+    .blog-post__cover img {
+        height: 200px;
+    }
+
+    .blog-aside {
+        display: none;
+    }
+}
